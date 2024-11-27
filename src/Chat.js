@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import io from 'socket.io-client';
 
-const socket = io('http://localhost:3001'); // サーバーのURL
+const socket = io('https://line-chat-backend.onrender.com'); // サーバーのURL
 
 const Chat = ({ user }) => {
   const [message, setMessage] = useState('');
